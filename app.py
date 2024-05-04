@@ -8,7 +8,7 @@ while True:
     options = menu.get_items()
     user_choice = input(f"What would you like? ({options}): ").lower()
     if user_choice == "report":
-        transaction_manager.report()
+        transaction_manager.report_generate()
     elif user_choice == "off":
         print("Machine turned off.")
         break
