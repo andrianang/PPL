@@ -8,8 +8,7 @@ class TransactionManager:
         self.coffee_maker = CoffeeMaker()
         self.money_machine = MoneyMachine()
         self.menu = Menu()
-        self.report = Report(self.coffee_maker, self.money_machine)
-
+        
     def process_order(self, order_name):
         drink = self.menu.find_drink(order_name)
         if drink:
@@ -20,5 +19,6 @@ class TransactionManager:
             print("Sorry that item is not available.")
 
     def report_generate(self):
-        return self.report.generate_report()
+        self.coffee_maker.report()
+        self.money_machine.report()
     
