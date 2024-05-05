@@ -1,7 +1,6 @@
 from coffeemaker import CoffeeMaker
 from moneymachine import MoneyMachine
 from menu import Menu
-from report import Report
 
 class TransactionManager:
     def __init__(self):
