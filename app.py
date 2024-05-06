@@ -1,4 +1,3 @@
-from menu import Menu
 from transaction_manager import TransactionManager
 
 transaction_manager = TransactionManager()
